@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "creation:on_superflat_transfer_bed"
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "cr.event.SteppingOnSuperflatTransferBed": 0
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "creation:backend/event/player_stepping_on_superflat_transfer_bed/start"
+    }
+}

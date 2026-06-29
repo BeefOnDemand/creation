@@ -1,0 +1,2 @@
+# necessary to call reinitialization function from here so that it is executed by/at "the world" rather than a player
+execute if score [Creation] cr.tools.ReinitializePack matches 1 run function creation:backend/pack/initialize

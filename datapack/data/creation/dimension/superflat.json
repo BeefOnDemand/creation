@@ -1,0 +1,26 @@
+{
+    "type": "creation:superflat",
+    "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+            "layers": [
+                {
+                    "block": "minecraft:bedrock",
+                    "height": 1
+                },
+                {
+                    "block": "minecraft:stone",
+                    "height": 47
+                },
+                {
+                    "block": "minecraft:white_concrete",
+                    "height": 16
+                }
+            ],
+            "biome": "minecraft:the_void",
+            "features": false,
+            "lakes": false,
+            "structure_overrides": []
+        }
+    }
+}

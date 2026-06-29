@@ -1,0 +1,3 @@
+advancement revoke @s only creation:backend/event/player_scoreboard_was_reset
+
+function creation:backend/tools/initialize_player_scoreboard

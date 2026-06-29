@@ -1,0 +1,1 @@
+$function creation:backend/tools/unload_chunk_from_player_storage with storage creation:player/$(uuid) player.bed.otherworld

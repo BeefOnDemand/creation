@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": []
+            }
+        }
+    },
+    "rewards": {
+        "function": "creation:backend/event/player_exists/trigger"
+    }
+}

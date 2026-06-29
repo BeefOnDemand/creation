@@ -1,0 +1,12 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "type_specific": {
+            "type": "minecraft:player",
+            "advancements": {
+                "creation:backend/event/player_entered_creation_for_first_time": true
+            }
+        }
+    }
+}

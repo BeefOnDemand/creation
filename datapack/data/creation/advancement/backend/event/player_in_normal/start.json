@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "creation:in_normal"
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "cr.event.InNormal": 0
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "creation:backend/event/player_in_normal/start"
+    }
+}

@@ -1,0 +1,1 @@
+advancement revoke @s only creation:backend/event/player_respawned_in_otherworld

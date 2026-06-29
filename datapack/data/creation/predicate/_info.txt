@@ -1,0 +1,7 @@
+Predicates
+
+A variety of predicates are included to check different player states. Using these predicates over other methods offers the following advantages:
+    * Is defined in only one location. If the conditions of the state need to be modified, it is done in one file instead of many.
+    * Can be checked by many different things (advancements, target selectors, execute commands, etc.).
+    * Easily invertable (predicate=!, unless predicate, etc.)
+    * Sometimes more performant than other methods of checking the player state.

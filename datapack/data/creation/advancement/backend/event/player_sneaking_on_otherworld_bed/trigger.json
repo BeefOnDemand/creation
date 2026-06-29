@@ -1,0 +1,36 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:all_of",
+                        "terms": [
+                            {
+                                "condition": "minecraft:reference",
+                                "name": "creation:on_otherworld_bed"
+                            },
+                            {
+                                "condition": "minecraft:reference",
+                                "name": "creation:sneaking"
+                            }
+                        ]
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "cr.event.SneakingOnOtherworldBed": {
+                                "min": 1
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "creation:backend/event/player_sneaking_on_otherworld_bed/trigger"
+    }
+}

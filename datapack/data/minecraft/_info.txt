@@ -1,0 +1,4 @@
+Base Game Data Additions and Modifications
+
+creation's "tick" and "load" functions are integrated with minecraft's.
+This gives creation a function that executes every tick, and also a function that runs every time a /reload command is issued.

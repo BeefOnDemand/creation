@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "to": "creation:superflat"
+            }
+        }
+    },
+    "rewards": {
+        "function": "creation:backend/event/player_entered_creation_for_first_time"
+    }
+}

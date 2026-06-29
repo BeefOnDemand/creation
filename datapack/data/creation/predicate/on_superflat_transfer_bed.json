@@ -1,0 +1,41 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "location": {
+                    "dimension": "creation:normal"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:any_of",
+            "terms": [
+                {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "stepping_on": {
+                            "block": {
+                                "blocks": "minecraft:white_bed"
+                            }
+                        }
+                    }
+                },
+                {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "location": {
+                            "block": {
+                                "blocks": "minecraft:white_bed"
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

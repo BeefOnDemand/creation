@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:location"
+        }
+    },
+    "rewards": {
+        "function": "creation:backend/event/player_joined_world_for_first_time"
+    }
+}

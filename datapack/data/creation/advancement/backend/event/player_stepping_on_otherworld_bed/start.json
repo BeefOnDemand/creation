@@ -1,0 +1,36 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "creation:on_otherworld_bed"
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "cr.event.SteppingOnOtherworldBed": 0
+                        }
+                    },
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:reference",
+                            "name": "creation:banned"
+                        }
+                    },
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "creation:creation_user"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "creation:backend/event/player_stepping_on_otherworld_bed/start"
+    }
+}

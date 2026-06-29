@@ -1,0 +1,1 @@
+$execute in creation:superflat run tp @s $(x) $(y) $(z)
