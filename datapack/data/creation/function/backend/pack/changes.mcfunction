@@ -1,2 +1,0 @@
-tellraw @s [{text:"Version notes:",bold:true,color:yellow}]
-tellraw @s [{text:"* Updated for 26.1.x\n* Fixed infinite bed teleport loop\n* Fixed player name/color not updating when changing dimensions",color:green}]

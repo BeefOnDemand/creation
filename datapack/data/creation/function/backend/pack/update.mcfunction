@@ -1,5 +1,10 @@
-data remove storage creation:datapack pack.update
-scoreboard players add [Creation] cr.admin.PackUpdated 1
+execute if data storage creation:datapack pack.history.1_0_0 run return fail
+data modify storage creation:datapack pack.history.1_0_0 set value ""
+execute unless data storage creation:datapack pack.origin run data modify storage creation:datapack pack.origin.1_0_0 set value ""
+data modify storage creation:datapack pack.version set value "v1.0.0"
+data modify storage creation:datapack pack.changes set value '\
+* The very first published release of Creation! \n\
+'
 
-data modify storage creation:datapack pack.update.0_1_0b set value "loaded"
-data modify storage creation:datapack pack.version set value "v0.1.0b"
+function creation:backend/pack/patch/check
+scoreboard players add [Creation] cr.dpack.Updated 1

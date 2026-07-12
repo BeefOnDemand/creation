@@ -5,7 +5,7 @@ data modify storage creation:datapack pack.update.full set value '\
 * Added admin function to view other player storage by player name\n\
 '
 
-data modify storage creation:datapack pack.update.summary set value '\
+data modify storage creation:datapack pack.changes set value '\
 * Your character glows yellow in creation dimensions!\n\
 * Internal improvements.\n\
 '
@@ -21,7 +21,7 @@ data modify storage creation:datapack pack.update.full set value '\
 * Previous gamemode of player in otherworld is restored when leaving creation \n\
 '
 
-data modify storage creation:datapack pack.update.summary set value '\
+data modify storage creation:datapack pack.changes set value '\
 * No more lag from loading your saved inventory in another world!\n\
 * Using a yellow bed in creation teleports you back to the starting area of that map.\n\
 * Everyone can automatically use yellow creation beds by default now (unless admin says NO!).\n\

@@ -14,7 +14,7 @@
                     "predicate": {
                         "stepping_on": {
                             "block": {
-                                "blocks": "minecraft:light_blue_bed"
+                                "blocks": "minecraft:yellow_bed"
                             }
                         }
                     }
@@ -25,7 +25,7 @@
                     "predicate": {
                         "location": {
                             "block": {
-                                "blocks": "minecraft:light_blue_bed"
+                                "blocks": "minecraft:yellow_bed"
                             }
                         }
                     }

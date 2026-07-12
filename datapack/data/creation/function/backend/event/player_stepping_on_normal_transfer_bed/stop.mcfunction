@@ -9,6 +9,7 @@ execute at @s if dimension creation:normal run return fail
 # Clear either blindness or darkness depending on if bed teleport effects are still active
 execute if entity @s[tag=cr.tag.StillWakingUpInSuperflat] run function creation:backend/effect/blindness/stop
 execute unless entity @s[tag=cr.tag.StillWakingUpInSuperflat] run function creation:backend/effect/darkness/stop
+tag @s remove cr.tag.StillWakingUpInSuperflat
 
 # Allow bed teleporting again
-tag @s remove cr.tag.StillWakingUpInSuperflat
+tag @s remove cr.tag.StillOnNormalTransferBed

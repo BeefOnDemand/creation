@@ -1,0 +1,1 @@
+data modify storage creation:datapack pack.patch.1_0_0 set value ""

@@ -1,17 +1,19 @@
-# Player Statistics
+# PLAYER VARIABLES
+# These are tracked per-player
+
+# Statistics
 scoreboard objectives add cr.stats.TotalUses dummy
 
-# Player Alerts
+# Alerts
 scoreboard objectives add cr.alert.PlayerQuit minecraft.custom:minecraft.leave_game
 scoreboard objectives add cr.alert.PlayerDied deathCount
 scoreboard objectives add cr.alert.PlayerRespawned minecraft.custom:minecraft.time_since_death
 scoreboard objectives add cr.alert.PlayerSlept minecraft.custom:minecraft.time_since_rest
 
-# Player Tracking
+# Tracking
 scoreboard objectives add cr.track.PlayerGamemode dummy
 
-
-# Player Event State Variables
+# Event State
 scoreboard objectives add cr.event.InCreation dummy
 scoreboard objectives add cr.event.InSuperflat dummy
 scoreboard objectives add cr.event.InNormal dummy
@@ -25,13 +27,13 @@ scoreboard objectives add cr.event.SteppingOnSuperflatTransferBed dummy
 scoreboard objectives add cr.event.SteppingOnNormalTransferBed dummy
 scoreboard objectives add cr.event.SteppingOnOtherworldBed dummy
 
-# Player Admin Variables
+# Admin
 scoreboard objectives add cr.admin.PlayerBanned dummy
 scoreboard objectives add cr.admin.PlayerOnProbation dummy
 scoreboard objectives add cr.admin.PlayerDebugging dummy
 scoreboard objectives add cr.admin.PlayerInitialized dummy
 
-# Player Temporary Variables
+# Temporary
 scoreboard objectives add cr.check.TeleportSuccess dummy
 scoreboard objectives add cr.check.PermanentChunk dummy
 scoreboard objectives add cr.check.LoadedChunk dummy
@@ -40,16 +42,19 @@ scoreboard objectives add cr.check.InventorySlot dummy
 scoreboard objectives add cr.check.OtherworldGamemode dummy
 
 
+# SYSTEM VARIABLES
+# These are tracked only once on the [Creation] scoreboard
 
-# System Admin Variables
-scoreboard objectives add cr.admin.PackInstalled dummy
-scoreboard objectives add cr.admin.PackUpdated dummy
-scoreboard objectives add cr.admin.PackEnabled dummy
-scoreboard objectives add cr.admin.PlayersEnabledByDefault dummy
+# Datapack
+scoreboard objectives add cr.dpack.Installed dummy
+scoreboard objectives add cr.dpack.Updated dummy
+scoreboard objectives add cr.dpack.Enabled dummy
 
-execute unless score [Creation] cr.admin.PlayersEnabledByDefault matches 0..1 run scoreboard players set [Creation] cr.admin.PlayersEnabledByDefault 1
+# Settings
+scoreboard objectives add cr.setts.EnablePlayersByDefault dummy
+execute unless score [Creation] cr.setts.EnablePlayersByDefault matches 0..1 run scoreboard players set [Creation] cr.setts.EnablePlayersByDefault 1
 
-# System Temporary Variables
+# Temporary
 scoreboard objectives add cr.tools.StorageIndex dummy
 scoreboard objectives add cr.tools.ReinitializePack dummy
 
@@ -71,4 +76,4 @@ scoreboard players set [Creation] cr.tools.StorageIndex 1
 execute unless data storage creation:datapack pack.initialized run function creation:backend/pack/initialize
 
 # Runs any update code for new version of datapack (one time) and keeps record of previously loaded versions
-execute unless data storage creation:datapack pack.update.0_1_0b run function creation:backend/pack/update
+function creation:backend/pack/update

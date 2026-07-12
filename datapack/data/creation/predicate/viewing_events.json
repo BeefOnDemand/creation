@@ -5,7 +5,7 @@
         "type_specific": {
             "type": "minecraft:player",
             "advancements": {
-                "creation:admin/debug": true
+                "creation:admin/event_viewer": true
             }
         }
     }

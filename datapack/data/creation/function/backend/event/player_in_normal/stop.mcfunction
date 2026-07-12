@@ -1,5 +1,7 @@
 advancement revoke @s only creation:backend/event/player_in_normal/stop
 
+execute if predicate creation:logging_events run tellraw @a[predicate=creation:viewing_events] [{"text":"[EVENT] ",color:"gray"},{"selector":"@s","italic":true},{"text":" exited Normal.",color:"gray","italic":true}]
+
 scoreboard players set @s cr.event.InNormal 0
 
 function creation:backend/tools/execute_with_uuid_storage/0 {function: "creation:backend/inventory/creation/normal/save", target: "@s"}

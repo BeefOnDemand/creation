@@ -1,6 +1,6 @@
 advancement revoke @s only creation:backend/event/player_sneaking_on_superflat_transfer_bed/trigger
 
-execute if entity @s[tag=cr.tag.StillWakingUpInNormal] run return fail
+execute if entity @s[tag=cr.tag.StillOnSuperflatTransferBed] run return fail
 
 scoreboard players set @s cr.check.TeleportSuccess 0
 execute store success score @s cr.check.TeleportSuccess run function creation:backend/tools/execute_with_uuid_storage/0 {function: "creation:backend/teleport/bed/transfer/superflat/use", target: "@s"}

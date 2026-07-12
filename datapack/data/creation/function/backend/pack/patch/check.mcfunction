@@ -1,0 +1,1 @@
+execute unless data storage creation:datapack pack.patch.1_0_0 run function creation:backend/pack/patch/1_0_0

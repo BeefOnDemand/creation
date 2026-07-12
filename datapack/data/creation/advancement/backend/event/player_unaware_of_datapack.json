@@ -10,7 +10,7 @@
                             "condition": "minecraft:entity_scores",
                             "entity": "this",
                             "scores": {
-                                "cr.admin.PackInstalled": 1
+                                "cr.dpack.Installed": 1
                             }
                         }
                     }

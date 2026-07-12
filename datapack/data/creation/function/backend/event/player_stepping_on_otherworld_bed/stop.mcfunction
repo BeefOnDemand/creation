@@ -9,6 +9,7 @@ execute if predicate creation:in_otherworld run return fail
 # Clear either blindness or darkness depending on if bed teleport effects are still active
 execute if entity @s[tag=cr.tag.StillWakingUpInCreation] run function creation:backend/effect/blindness/stop
 execute unless entity @s[tag=cr.tag.StillWakingUpInCreation] run function creation:backend/effect/darkness/stop
+tag @s remove cr.tag.StillWakingUpInCreation
 
 # Allow bed teleporting again
-tag @s remove cr.tag.StillWakingUpInCreation
+tag @s remove cr.tag.StillOnOtherworldBed

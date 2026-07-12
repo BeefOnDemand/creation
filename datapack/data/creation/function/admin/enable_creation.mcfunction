@@ -1,4 +1,4 @@
-scoreboard players set [Creation] cr.admin.PackEnabled 1
+scoreboard players set [Creation] cr.dpack.Enabled 1
 
 tellraw @s [{text:"[System] ",color:gold},{text:"Creation enabled.",color:"gray"}]
 

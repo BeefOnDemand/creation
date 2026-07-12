@@ -20,4 +20,4 @@ data modify storage creation:world/creation world.normal.default.z set value 0
 
 # Finish initilization
 data modify storage creation:datapack pack.initialized set value "yes"
-scoreboard players set [Creation] cr.admin.PackEnabled 1
+scoreboard players set [Creation] cr.dpack.Enabled 1

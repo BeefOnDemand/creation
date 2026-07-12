@@ -1,11 +1,8 @@
 advancement revoke @s only creation:backend/event/player_sneaking_on_creation_bed/trigger
 
-execute if entity @s[tag=cr.tag.StillWakingUpInOtherworld] run return fail
+execute if entity @s[tag=cr.tag.StillOnCreationBed] run return fail
 
-execute if score [Creation] cr.admin.PackEnabled matches 0 run return run function creation:backend/alert/creation_disabled
-
-execute if predicate creation:in_superflat run return run function creation:backend/teleport/default/transfer/superflat/use
-execute if predicate creation:in_normal run return run function creation:backend/teleport/default/transfer/normal/use
+execute if score [Creation] cr.dpack.Enabled matches 0 run return run function creation:backend/alert/creation_disabled
 
 scoreboard players set @s cr.check.TeleportSuccess 0
 execute store success score @s cr.check.TeleportSuccess run function creation:backend/tools/execute_with_uuid_storage/0 {function: "creation:backend/teleport/bed/creation/use", target: "@s"}
